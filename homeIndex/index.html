@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="assets/js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <i class='bx bx-menu menu_bar'></i>
+        <div class="menu-setting">
+            <a href="#"><i class='bx bxs-cog'></i></a>
+            <img class="avatar" src="https://files.catbox.moe/qv1m1c.jpg" alt="">
+        </div>
+    </header>
+    <div class="container">
+        <nav class="navbar">
+            <i class='bx bx-home nav-icon active tab' onclick="openTab('home')"></i><div class="hr"></div>
+            <i class='bx bx-dollar-circle nav-icon tab' onclick="openTab('banking')"></i><div class="hr"></div>
+            <i class='bx bx-cart nav-icon tab' onclick="openTab('shop')"></i><div class="hr"></div>
+            <i class='bx bx-info-circle nav-icon tab' onclick="openTab('infomation')"></i>
+        </nav>
+        <div class="content">
+            <div id="home" class="tab-pane" style="display: block;">
+                <h1 style="text-align: center;">Home</h1>
+            </div>
+            <div id="banking" class="tab-pane" style="display: none;">
+                <h1 style="text-align: center;">Banking</h1>
+            </div>
+            <div id="shop" class="tab-pane" style="display: none;">
+                <h1 style="text-align: center;">Shop</h1>
+            </div>
+            <div id="infomation" class="tab-pane" style="display: none;">
+                <h1 style="text-align: center;">Infomation</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

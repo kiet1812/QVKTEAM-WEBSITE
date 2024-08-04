@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: darkgrey;
+}
+
+.hr {
+    background-color: darkgray;
+    width: 70%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    background-color: white;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.bx {
+    font-size: 30px;
+}
+
+.menu_bar {
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu-setting {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px dashed black;
+}
+
+.navbar {
+    height: calc(100vh - 80px - 10px);
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    width: 70px;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; */
+}
+.active{
+    padding: unset;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background: black;
+    color: white !important;
+    position: relative;
+}
+.nav-icon.active::before{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav-icon {
+    font-size: 35px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav-icon::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    border-radius: 10px;
+    display: block;
+}
+
+.nav-icon:hover::after {
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    background-color: white;
+    flex: 1;
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 15px;
+}
