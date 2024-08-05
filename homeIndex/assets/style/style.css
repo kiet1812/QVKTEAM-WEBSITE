@@ -16,6 +16,8 @@ body {
     height: 2px;
     display: block;
     margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -71,45 +73,33 @@ body {
     align-items: center;
     justify-content: flex-start; */
 }
-.active{
-    padding: unset;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    background: black;
-    color: white !important;
+.tab{
     position: relative;
-}
-.nav-icon.active::before{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.nav-icon {
-    font-size: 35px;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    margin-left: 50%;
-    margin-top: 50%;
-    transform: translate(-50%,-50%);
-}
-.nav-icon::after {
-    content: "";
     height: 50px;
     width: 50px;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.2;
-    border-radius: 10px;
-    display: block;
+    border-radius: 15px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
 }
-
-.nav-icon:hover::after {
+.nav-icon{
+    font-size: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.nav-icon.tab::before{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav-icon.tab:hover{
+    background-color: rgba(133, 133, 133, 0.534);
+}
+.active{
+    background-color: black;
+    color: white;
+}
+.nav-icon.tab.active{
     background-color: black;
 }
 .container{
