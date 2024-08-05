@@ -21,10 +21,26 @@
     </header>
     <div class="container">
         <nav class="navbar">
-            <i style="margin-top: 10px;" class='bx bx-home nav-icon active tab' onclick="openTab('home')"></i><div class="hr"></div>
-            <i class='bx bx-dollar-circle nav-icon tab' onclick="openTab('banking')"></i><div class="hr"></div>
-            <i class='bx bx-cart nav-icon tab' onclick="openTab('shop')"></i><div class="hr"></div>
-            <i class='bx bx-info-circle nav-icon tab' onclick="openTab('infomation')"></i>
+            <div style="margin-top: 10px;" class="box_items__sidebar active tab" onclick="openTab('home')">
+                <i class='bx bx-home nav-icon'></i>
+                <span class="label__sidebar">Trang Chủ</span>
+            </div><div class="hr"></div>
+            <div class="box_items__sidebar tab" onclick="openTab('banking')">
+                <i class='bx bx-dollar-circle nav-icon'></i>
+                <span class="label__sidebar">Nạp Tiền</span>
+            </div><div class="hr"></div>
+            <div class="box_items__sidebar tab" onclick="openTab('shop')">
+                <i class='bx bx-cart nav-icon'></i>
+                <span class="label__sidebar">Sản Phẩm</span>
+            </div><div class="hr"></div>
+            <div class="box_items__sidebar tab" onclick="openTab('infomation')">
+                <i class='bx bx-info-circle nav-icon' onclick="openTab('infomation')"></i>
+                <span class="label__sidebar">Liên Hệ</span>
+            </div>
+            <!-- <i style="margin-top: 10px;" class='bx bx-home nav-icon active tab' onclick="openTab('home')"></i><span class="label__sidebar">Trang Chủ</span><div class="hr"></div>
+            <i class='bx bx-dollar-circle nav-icon tab' onclick="openTab('banking')"></i><span class="label__sidebar">Nạp Tiền</span><div class="hr"></div>
+            <i class='bx bx-cart nav-icon tab' onclick="openTab('shop')"></i><span class="label__sidebar">Sản Phẩm</span><div class="hr"></div>
+            <i class='bx bx-info-circle nav-icon tab' onclick="openTab('infomation')"></i><span class="label__sidebar">Liên Hệ</span> -->
         </nav>
         <div class="content">
             <div id="home" class="tab-pane" style="display: block;">
